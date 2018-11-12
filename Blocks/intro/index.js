@@ -19,17 +19,8 @@ registerBlockType(
             }
         },
         edit( props ){
-            return( <Edit {...props}/> )
         },
         save( props ){
-
-            const { attributes: { intro } } = props;
-
-            return (
-                <p className="intro">
-                    {intro}
-                </p>
-            );
         }
     }
 )

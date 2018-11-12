@@ -16,21 +16,21 @@ export default class Edit extends Component {
 
         //bind this class to the setIntro function, so we
         //can use "this" in that function.
-        this.setIntro = this.setIntro.bind(this);
+        //this.setIntro = this.setIntro.bind(this);
     }
 
     /**
      * Render a simple RichText component
      */
-    render(){
+    render() {
+        const { attributes } = this.props;
         return (
             <RichText
                 tagName="p"
                 className="intro"
-                value={this.props.attributes.intro}
-                placeholder={__('Write an intro', 'myplugin')}
-                onChange={this.setIntro}
-                inlineToolbar
+                placeholder="Type an introduction"
+                value={attributes.intro}
+                onChange={(value) => { setAttributes({ intro: value } ) }}
             />
         )
     }
@@ -40,7 +40,7 @@ export default class Edit extends Component {
      * 
      * @param String value 
      */
-    setIntro( value ){
+    setIntro(value) {
         const { setAttributes } = this.props;
         setAttributes({
             intro: value

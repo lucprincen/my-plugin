@@ -21,16 +21,15 @@ registerBlockType(
         },
         edit( props ){
 
-            const { attributes: { subtitle }, setAttributes } = props;
+            const { setAttributes } = props;
+            let subtitle = props.attributes.subtitle;
 
             return (
-                <RichText   
+                <RichText
                     tagName="h3"
                     value={subtitle}
-                    placeholder={__('Write a subtitle', 'myplugin')}
-                    onChange={(value) => setAttributes({ subtitle: value })}
-                    inlineToolbar
-                />
+                    onChange={(value) => { setAttributes({ subtitle: value })}}
+                />                
             )                
 
         },

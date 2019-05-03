@@ -1,4 +1,26 @@
-.intro {
-  font-size: 1.2rem;
-  background: #eee;
-  padding: 15px; }
+.wp-block-myplugin-cheatsheet h3 {
+  font-size: 2rem;
+  color: #444; }
+
+.wp-block-myplugin-cheatsheet a.image-container {
+  display: block;
+  padding: 15px;
+  border: 2px solid #444;
+  position: relative; }
+  .wp-block-myplugin-cheatsheet a.image-container img {
+    width: 100%;
+    height: auto;
+    display: block; }
+  .wp-block-myplugin-cheatsheet a.image-container:hover {
+    opacity: .7; }
+  .wp-block-myplugin-cheatsheet a.image-container p {
+    z-index: 20;
+    position: absolute;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    left: 0;
+    right: 0;
+    text-align: center; }
+.wp-block-my-plugin-dynamic .post-list {
+  margin-left: 30px; }

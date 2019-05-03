@@ -1,0 +1,32 @@
+.wp-block-myplugin-cheatsheet{
+    h3{
+        font-size: 2rem;
+        color: #444;
+    }
+
+    a.image-container{
+        display: block;
+        padding: 15px;
+        border: 2px solid #444;
+        position: relative;
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        &:hover{
+            opacity: .7;
+        }
+        
+        p{
+            z-index: 20;
+            position: absolute;
+            align-self: center;
+            left: 0;
+            right: 0;
+            text-align: center;
+        }
+    }
+}

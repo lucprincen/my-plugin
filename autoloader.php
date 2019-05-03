@@ -13,6 +13,7 @@ class Autoloader
     {
         //for the front:
         Front\Assets::getInstance();
+        Front\Blocks::getInstance();
         if (is_admin()) {
             Admin\Assets::getInstance();
         }
